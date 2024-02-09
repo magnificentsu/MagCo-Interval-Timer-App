@@ -1,0 +1,1 @@
+# MagCo-Interval-Timer-App
