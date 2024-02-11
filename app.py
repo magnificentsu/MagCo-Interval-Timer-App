@@ -1,6 +1,9 @@
 """
 An application to help optimize your workout efficiency.
 """
+
+
+
 import time
 from threading import Timer
 import toga
@@ -72,3 +75,13 @@ def main():
 if __name__ == '__main__':
     app = main()
     app.main_loop()
+
+
+#NEXT STEPS
+
+# Center the timer on the screen
+# Add functions for sets/reps
+# Add a count down timer function (most important part)
+# Add another timer for rest time
+# Connect these 3 with conditons, etc
+# 
