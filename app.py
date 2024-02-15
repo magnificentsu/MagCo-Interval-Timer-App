@@ -34,12 +34,12 @@ class MagCoIntervalTimer(toga.App):
         self.countdown_label = toga.Label('00:00:00', style=Pack(font_size=72))  # Larger font size for countdown timer
 
         # Create buttons for adjusting countdown duration for minutes
-        self.up_minutes_button = toga.Button('↑', on_press=self.increase_minutes)
-        self.down_minutes_button = toga.Button('↓', on_press=self.decrease_minutes)
+        self.up_minutes_button = toga.Button('+1 Minute ↑', on_press=self.increase_minutes)
+        self.down_minutes_button = toga.Button('-1 Minute ↓', on_press=self.decrease_minutes)
 
         # Create buttons for adjusting countdown duration for seconds
-        self.up_seconds_button = toga.Button('↑', on_press=self.increase_seconds)
-        self.down_seconds_button = toga.Button('↓', on_press=self.decrease_seconds)
+        self.up_seconds_button = toga.Button('+1 Second ↑', on_press=self.increase_seconds)
+        self.down_seconds_button = toga.Button('-1 Second ↓', on_press=self.decrease_seconds)
 
         # Create boxes to hold the buttons and labels for countdown timer controls
         minutes_control_box = toga.Box(style=Pack(direction=ROW, padding_top=10, padding_bottom=10))
